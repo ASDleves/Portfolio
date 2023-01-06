@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    font-family: 'Varela Round';
+}
+body{
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+nav ul#egysor li{
+    display: inline;
+}
+nav ul{
+
+    word-spacing: 30px;
+}
+nav{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+main{
+    width: 100%;
+    max-width: 2000px;
+    background-color: rgb(40, 40, 40);
+}
+main{
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: rgb(40, 40, 40);
+}
+
+header{
+    text-align: center;
+    margin: auto;
+    display: grid;
+  padding-bottom: 30px;
+}
+img{
+    height: 100px;
+    
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+section img{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.vonal{
+    border-right: 3px solid red;
+}
+section ul li::before {
+    content: "➧";
+    color: orange;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+ section h2{
+    text-align: center;
+}
