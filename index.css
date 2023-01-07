@@ -3,42 +3,67 @@
     font-family: 'Varela Round';
 }
 body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
     color: white;
-    background-color: rgb(40, 40, 40);
+    
 }
-nav ul#egysor li{
-    display: inline;
-}
-nav ul{
 
-    word-spacing: 30px;
-}
-nav{
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-main{
-    width: 100%;
-    max-width: 2000px;
-    background-color: rgb(40, 40, 40);
-}
 main{
     margin: auto;
     width: 80%;
     max-width: 700px;
-    background-color: rgb(40, 40, 40);
+    padding: 20px;
 }
 
 header{
+    font-size: 24pt;
     text-align: center;
     margin: auto;
     display: grid;
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 img{
-    height: 100px;
-    
+    padding-top: 20px;
+    height: 150px;
+    width: 100%;
+    margin: auto;
 }
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: red;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -54,12 +79,16 @@ section img{
 }
 section ul li::before {
     content: "➧";
-    color: orange;
+    color: red;
     font-weight: bold;
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
   }
+section ul{
+    padding-top: 20px;
+
+}
  section h2{
     text-align: center;
 }
