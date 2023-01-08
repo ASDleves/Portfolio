@@ -14,6 +14,10 @@ main{
     width: 80%;
     max-width: 700px;
     padding: 20px;
+    display: grid;
+    grid-template-areas: "h h h"
+                        "a a a";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 header{
@@ -21,12 +25,16 @@ header{
     text-align: center;
     margin: auto;
     padding-bottom: 30px;
+    grid-area: h;
 }
 img{
     padding-top: 20px;
     height: 150px;
     width: 100%;
     margin: auto;
+}
+article{
+ grid-area: a;
 }
 
 .container {
@@ -73,10 +81,13 @@ section img{
     margin: auto;
     text-align: center;
 }
-.vonal{
+footer{
     border-right: 3px solid red;
 }
-section ul li::before {
+aside{
+    border-right: 3px solid red;
+}
+article ul li::before {
     content: "➧";
     color: red;
     font-weight: bold;
@@ -84,18 +95,45 @@ section ul li::before {
     width: 1em;
     margin-left: -1em;
   }
-section ul{
+article ul{
     padding-top: 20px;
     
 }
 h2{
     font-size: 27px;
 }
-section ul li{
+article ul li{
     font-size: 20px;
     
 }
 
- section h2{
+article h2{
     text-align: center;
 }
+@media only screen and (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template-areas:"h"
+                            "a";
+        grid-template-columns: auto;
+        width: 50%;
+    }
+    article{
+        display: grid;
+        grid-template-areas:"f"
+                            "as"
+                            "s";
+        grid-template-columns: auto;
+    }
+    footer{
+        grid-area: f;
+        border: none;
+    }
+    aside{
+        grid-area: as;
+        border: none;
+    }
+    section{
+        grid-area: s;
+    }
+  }
