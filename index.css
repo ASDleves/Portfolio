@@ -20,7 +20,6 @@ header{
     font-size: 24pt;
     text-align: center;
     margin: auto;
-    display: grid;
     padding-bottom: 30px;
 }
 img{
@@ -87,8 +86,16 @@ section ul li::before {
   }
 section ul{
     padding-top: 20px;
-
+    
 }
+h2{
+    font-size: 27px;
+}
+section ul li{
+    font-size: 20px;
+    
+}
+
  section h2{
     text-align: center;
 }
