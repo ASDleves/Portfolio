@@ -78,3 +78,27 @@ footer{
     text-align: center;
     font-size: 20px;
 }
+@media only screen and (max-width: 950px) {
+    nav ul li{
+        display: block;
+        padding: 3px;
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 530px) {
+    main{
+        grid-template-columns: 1fr;
+     grid-template-areas: "h"
+                         "n"
+                         "a"
+                         "as"
+                         "f";
+    display: grid;
+    }
+    aside{
+        margin: auto;
+    }
+    footer{
+        padding-top: 10px;
+    }
+  }
