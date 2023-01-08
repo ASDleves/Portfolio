@@ -134,3 +134,42 @@ footer{
    text-align: center;
     padding: 20px;
 }
+@media only screen and (max-width: 950px) {
+    nav ul li{
+        display: block;
+        padding: 3px;
+        text-align: center;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                             "n"
+                             "c"
+                             "c2"
+                             "a"
+                             "c3"
+                             "as"
+                             "c4"
+                             "s"
+                             "f";
+    }
+    article{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+    }
+    aside{
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    section{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
