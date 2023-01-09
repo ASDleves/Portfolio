@@ -161,6 +161,11 @@ section image{
     grid-area: c;
     padding-top: 30px;
   }
+  .containers {
+    position: relative;
+    grid-area: c;
+    padding-top: 30px;
+  }
   
   /* Hide the images by default */
   .mySlides {
@@ -170,7 +175,7 @@ section image{
   .mySlides img{
     margin-left: auto;
     margin-right: auto;
-    display: block
+    display: block;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -210,6 +215,9 @@ section image{
     height: 229px;
    
   }
+.containers img{
+    height: 400px;
+}
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
