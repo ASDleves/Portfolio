@@ -270,6 +270,9 @@ section image{
             -o-transform: rotate(250deg);
             transform: rotate(250deg);
   }
+  audio{
+    display: none;
+  }
   @media only screen and (max-width: 950px) {
     nav ul li{
         display: block;

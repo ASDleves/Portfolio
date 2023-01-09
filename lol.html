@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Rang, Hősök">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Richárd</title>
     <link rel="stylesheet" href="hobby.css">
 </head>
+<script>
+  function setHalfVolume() {
+    var myAudio = document.getElementById("audio1");  
+    myAudio.volume = 0.1; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+}
+</script>
 <body>
+  <audio id= "audio1" controls="controls" autoplay onloadeddata="setHalfVolume()">
+    <source src="zenek/2WEI, Louis Leibfried, Edda Hayes - The Call (Official 2022 League of Legends Cinematic).mp3" type="audio/mpeg">
+  </audio>
     <main>
         <header>
             <h1>Hobbik</h1>
