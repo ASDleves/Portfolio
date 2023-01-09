@@ -29,7 +29,6 @@
                   </button>
                   <div class="dropdown-content">
                     <a href="hobby.html">Hobbi</a>
-                    <a href="sport.html">Taekwon-do</a>
                     <a href="dota.html">Dota 2</a>
                     <a href="brawl.html">Brawlhalla</a>
                   </div>
@@ -82,9 +81,101 @@
                     <td>1614</td>
                 </tr>
             </table>
+            
         </section>
+        <div class="container">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="kepek/akali1.webp" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="kepek/akali2.webp" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="kepek/belveth1.webp" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="kepek/belveth2.jpg" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="kepek/chogat1.jpg" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="kepek/chogat2.jpg" style="width:50%">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="kepek/akali1.webp" style="width:100%" onclick="currentSlide(1)" alt="Akali">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/akali2.webp" style="width:100%" onclick="currentSlide(2)" alt="Crime city Akali">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/belveth1.webp" style="width:100%" onclick="currentSlide(3)" alt="Bel'Veth">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/belveth2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Battleboss Bel'Veth">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/chogat1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cho'Gath">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/chogat2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Prehistoric Cho'Gath">
+              </div>
+            </div>
+          </div>
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+                
         <footer>
-            <h2>Bella Richárd</h2>
+            Bella Richárd
         </footer>
     </main>
 </body>

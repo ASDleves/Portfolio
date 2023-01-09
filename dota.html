@@ -29,19 +29,147 @@
                   </button>
                   <div class="dropdown-content">
                     <a href="hobby.html">Hobbi</a>
-                    <a href="sport.html">Taekwon-do</a>
-                    <a href="brawl.html">Brawlhalla</a>
                     <a href="lol.html">League of Legends</a>
+                    <a href="brawl.html">Brawlhalla</a>
                   </div>
                 </div>
               </div>
         </nav2>
-        <article>
-
-        </article>
         <aside>
-
+            <img src="kepek/dota2.png" alt="">
         </aside>
+        <article>
+            <h2>Kezdetek</h2>
+            <p>2018.04.30-án játszottam először a játékkal. Ez volt az első moba játék amivel valaha játszottam. Kisebb nagyobb kihagyásokkal, de még mindig játszok a játékkal</p>
+            <p>Jelenlegi rangok:</p>
+            <ul>
+                <li>Ranked: Keresztes V</li>
+            </ul>
+        </article>
+        <section>
+            <h2>Kedvenc hősök</h2>
+            <table>
+                <tr>
+                    <th>Rangsor</th>
+                    <th>Név</th>
+                    <th>ösvény</th>
+                    <th>Win rate</th>
+                    <th>Összes meccs</th>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Windranger</td>
+                    <td>mid</td>
+                    <td>59,5%</td>
+                    <td>148</td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td>WraithKing</td>
+                    <td>Tank/Carry</td>
+                    <td>65%</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td>Queen of Pain</td>
+                    <td>Mid</td>
+                    <td>51%</td>
+                    <td>39</td>
+                </tr>
+            </table>
+            
+        </section>
+        <div class="container">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="kepek/wind1.webp" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="kepek/wr2.png" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="kepek/wk1.webp" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="kepek/wk2.jpg" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="kepek/qop1.webp" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="kepek/qop2.jpg" style="width:50%">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="kepek/wind1.webp" style="width:100%" onclick="currentSlide(1)" alt="Windranger">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/wr2.png" style="width:100%" onclick="currentSlide(2)" alt="Compass of the Rising Gale">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/wk1.webp" style="width:100%" onclick="currentSlide(3)" alt="WraithKing">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/wk2.jpg" style="width:100%" onclick="currentSlide(4)" alt="The One True King">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/qop1.webp" style="width:100%" onclick="currentSlide(5)" alt="Queen of Pain">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="kepek/qop2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Eminence of Ristul">
+              </div>
+            </div>
+          </div>
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
         <footer>
             Bella Richárd
         </footer>

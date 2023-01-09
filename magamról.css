@@ -102,3 +102,8 @@ footer{
         padding-top: 10px;
     }
   }
+  @media only screen and (max-width: 530px) {
+    body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
