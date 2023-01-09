@@ -263,6 +263,13 @@ section image{
     margin: auto;
     grid-area: f;
   }
+  .nyil{
+    -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(250deg);
+            -ms-transform: rotate(250eg);
+            -o-transform: rotate(250deg);
+            transform: rotate(250deg);
+  }
   @media only screen and (max-width: 950px) {
     nav ul li{
         display: block;
@@ -286,9 +293,37 @@ section image{
     table{
         width: 100%;
     }
-}
+    nav2{
+        margin: auto;
+    }
+    .nyil{
+            -webkit-transform: rotate(300deg);
+                    -moz-transform: rotate(300deg);
+                    -ms-transform: rotate(300deg);
+                    -o-transform: rotate(300deg);
+                    transform: rotate(300deg);
+          }
+    }
+
 @media only screen and (max-width: 530px) {
     body{
         background-repeat: no-repeat;
         background-attachment: fixed;
-    }}
+    }
+    .nyil{
+        -webkit-transform: rotate(290deg);
+                -moz-transform: rotate(290deg);
+                -ms-transform: rotate(290deg);
+                -o-transform: rotate(290deg);
+                transform: rotate(290deg);
+      }
+}
+@media only screen and (max-width: 450px) {
+    .nyil{
+        -webkit-transform: rotate(270deg);
+                -moz-transform: rotate(270deg);
+                -ms-transform: rotate(270deg);
+                -o-transform: rotate(270deg);
+                transform: rotate(270deg);
+      }
+}
