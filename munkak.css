@@ -101,9 +101,14 @@ img{
     margin: auto;
 }
 button{
+    margin: auto;
     grid-area: b;
     height: 20px;
     width: 100px;
+}
+button a{
+    text-decoration: none;
+    color: black;
 }
 h3{
     text-align: center;
@@ -123,7 +128,10 @@ nav ul li{
     padding: 35px;
     font-size: 20px;
 }
-nav ul a li:hover{
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
     color: turquoise;
 }
 nav ul a{

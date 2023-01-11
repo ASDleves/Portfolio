@@ -44,22 +44,26 @@ nav{
 nav ul li{
     display: inline;
     color: white;
-    padding: 35px;
+    padding: 30px;
     font-size: 20px;
 }
-nav ul a li:hover{
+nav ul li a{
+  color: white;
+}
+nav ul li a:hover{
     color: turquoise;
 }
 nav ul a{
     text-decoration: none;
 }
-nav2{
+.nav2{
     grid-area: n2;
     font-size: 20px;
 }
-nav2 button p{
+.nav2 .dropdown .dropbtn{
     font-size: 20px;
 }
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -266,7 +270,7 @@ section image{
   .nyil{
     -webkit-transform: rotate(45deg);
             -moz-transform: rotate(250deg);
-            -ms-transform: rotate(250eg);
+            -ms-transform: rotate(250deg);
             -o-transform: rotate(250deg);
             transform: rotate(250deg);
   }
@@ -296,7 +300,7 @@ section image{
     table{
         width: 100%;
     }
-    nav2{
+    .nav2{
         margin: auto;
     }
     .nyil{
